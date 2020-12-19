@@ -1,0 +1,78 @@
+.project{
+
+    .project-title{
+        margin: 50px auto;
+        color: $color-blue-brand;
+        font-size: 2.8rem;
+    }
+
+    .bg-project1{
+        background-image: url("../assets/img/digital-agency.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bg-project2{
+        background-image: url("../assets/img/barber-shop.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }.bg-project3{
+        background-image: url("../assets/img/dashboard-ventas.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }.bg-project4{
+        background-image: url("../assets/img/digital-agency.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }.bg-project5{
+        background-image: url("../assets/img/digital-agency.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }.bg-project6{
+        background-image: url("../assets/img/digital-agency.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .project-container-description{
+        width: 350px;
+        border: solid 1px rgba(51, 54, 77, 0.3);
+        width: 300px;
+        min-height: 200px;
+        margin-bottom: 30px;
+        padding: 10px;
+        border-radius: 10px;
+        
+        .project-container-title{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        p{
+            font-size: 0.8rem;
+            color: $color-black-brand;
+        }
+
+        a{
+            border: solid 1px $color-blue-brand;
+            border-radius: 5px;
+            padding: 7px 15px;
+            text-decoration: none;
+            color: $color-blue-brand;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 60px;
+
+            &:hover{
+                background-color: $color-blue-brand;
+                color: white;
+                transition: all 0.2s ease-out; 
+            }
+        }
+        
+    }
+
+    
+          
+}

@@ -1,0 +1,148 @@
+header{
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+
+    .logo{
+        a{
+            img{
+                width: 150px;
+                z-index: 9;
+            }
+        }
+    }
+}
+
+/*****************************contenido de la izquierda*******************/
+main{
+    .contain-left{
+        position: relative;
+        height: 100vh;
+        width: 50%;
+        z-index: 10;
+
+        .btn-social-media{
+            position: absolute;
+            bottom: 50%;
+            z-index: 998;
+        }
+
+        .panel-btn{
+            position: absolute;
+            bottom: 50%;
+            z-index: 998;
+        }
+
+        .panel-btn{
+            position: absolute;
+            background-color: $color-bg-hamburguer;
+            z-index: 999;
+            bottom: 1vw;
+            left: 1vw;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            border: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            outline: none; 
+        }
+
+        .btn-social-media{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: -50px;
+            
+            a{
+                font-size: 2rem;
+                background-color: crimson;
+                border-radius: 5px;
+                color: white;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                margin-bottom: 2px;
+            }
+
+            .twitter{
+                background-color: #1DA1F2;
+                &:hover{
+                    background-color: $color-bg-dark;
+                }
+            }
+
+            .github{
+                background-color: #333333;
+                &:hover{
+                    background-color: $color-bg-dark;
+                }
+            }
+
+            .linkedin{
+                background-color: #0077B5;
+                &:hover{
+                    background-color: $color-bg-dark;
+                }
+            }
+        }
+        
+    }
+
+    .user-contain{
+        position: absolute;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        
+        img{
+            border-radius: 50%;
+            width: 250px;
+        }
+
+        .user-description{
+            text-align: center;
+
+            .user-name{
+                font-size: 2.5rem;
+                font-weight: bold;
+                color: $color-black-brand;
+                margin-bottom: 0;
+            }
+
+            .user-employment{
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+        }
+
+        a{
+            cursor: pointer;
+            display: flex;
+            
+            img{
+                width: 70px;
+            }
+        }
+    }
+
+    .contain-right{
+        position: absolute;
+        opacity: 0.8;
+        background-image: linear-gradient(rgba(0, 8, 57, 0.59),rgba(0, 8, 57, 0.6)), url(../assets/img/background-black.jpg);
+        background-size: cover;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        z-index: 2;
+    }
+}

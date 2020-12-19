@@ -1,0 +1,46 @@
+.contact{
+    margin-top: 150px;
+    position: relative;
+
+    .contact-contain-left{
+        position: absolute;
+        background-color: $color-blue-brand;
+        height: 500px;
+
+        h1{
+            color: white;
+            text-align: center;
+        }
+
+        a{
+            display: inline-flex;
+            color: white;
+            margin: 10px auto;
+            font-size: 1rem;
+            align-items: center;
+            align-self: center;
+            justify-content: center;
+
+            &:hover{
+                text-decoration: none;
+            }
+
+            i{
+                margin-right: 5px;
+                color: $color-black-brand;
+                background-color: $color-yellow-brand;
+                font-size: 2.5rem;
+                border-radius: 50%;
+                padding: 10px;
+
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .contact-contain-right{
+        display: none;
+    }
+}

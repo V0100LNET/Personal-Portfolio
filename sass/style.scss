@@ -1,0 +1,27 @@
+$color-blue-brand: #000839;
+$color-yellow-brand: #FEDA24; 
+$color-black-brand: #211E1E;
+$color-white-brand: white;
+
+$color-bg-dark: #33364D;
+$color-bg-hamburguer: #F0A500;
+
+*,
+*::before,
+::after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+@import 'home';
+@import 'about';
+@import 'skills';
+@import 'projects';
+@import 'contact';

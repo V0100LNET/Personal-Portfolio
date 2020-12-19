@@ -1,0 +1,90 @@
+.about{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 8, 57, 0.7),rgba(0, 8, 57, 0.7)), url(../assets/img/background-bellasArtes.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-header{
+    background-color: $color-blue-brand;
+
+    a{
+        color: white;
+        font-weight: bold;
+        display: inline-block;
+        margin-right: 50px; 
+        font-size: 1.3rem;
+        padding: 10px 5px;
+        cursor: pointer;
+        position: relative;
+        
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    
+    a.active{
+        &::after{
+            content: "";
+            display: flex;
+            background-color: white;
+            width: 30px;
+            height: 2.2px;
+            position: absolute;
+            left: 50%;
+        }
+    }
+}
+
+.about-main{
+    h1{
+        text-align: center;
+        margin-top: 50px;
+        color: white;
+        font-size: 2.8rem;
+    }        
+
+    .about-image{
+        
+        margin-top: 50px;
+        
+        .image{
+            border-radius: 50%;
+            width: 180px;
+            border: 5px solid white;
+            position: relative;
+            top: 12px;
+            z-index: 1;
+        }
+
+        .image-comilla{
+            position: absolute;
+            background-color: $color-blue-brand;
+            width: 35px;
+            padding: 5px;
+            color: white;
+            left: 20px;
+            top: 40px;
+            z-index: 1;
+            border-radius: 50%;
+            
+            &:hover{
+                color: green;
+            }
+        }
+    }
+
+    .about-description{
+        background-color: white;
+        max-width: 650px;
+        min-height: 150px;
+        border-radius: 5px;
+
+        p{
+            padding: 15px 30px;
+            line-height: 28px;
+            font-size: 1.2rem;
+        }
+    }
+}

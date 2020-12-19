@@ -1,0 +1,389 @@
+*,
+*::before,
+::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+}
+header .logo a img {
+  width: 150px;
+  z-index: 9;
+}
+
+/*****************************contenido de la izquierda*******************/
+main .contain-left {
+  position: relative;
+  height: 100vh;
+  width: 50%;
+  z-index: 10;
+}
+main .contain-left .btn-social-media {
+  position: absolute;
+  bottom: 50%;
+  z-index: 998;
+}
+main .contain-left .panel-btn {
+  position: absolute;
+  bottom: 50%;
+  z-index: 998;
+}
+main .contain-left .panel-btn {
+  position: absolute;
+  background-color: #F0A500;
+  z-index: 999;
+  bottom: 1vw;
+  left: 1vw;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+main .contain-left .btn-social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: -50px;
+}
+main .contain-left .btn-social-media a {
+  font-size: 2rem;
+  background-color: crimson;
+  border-radius: 5px;
+  color: white;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+main .contain-left .btn-social-media .twitter {
+  background-color: #1DA1F2;
+}
+main .contain-left .btn-social-media .twitter:hover {
+  background-color: #33364D;
+}
+main .contain-left .btn-social-media .github {
+  background-color: #333333;
+}
+main .contain-left .btn-social-media .github:hover {
+  background-color: #33364D;
+}
+main .contain-left .btn-social-media .linkedin {
+  background-color: #0077B5;
+}
+main .contain-left .btn-social-media .linkedin:hover {
+  background-color: #33364D;
+}
+main .user-contain {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+main .user-contain img {
+  border-radius: 50%;
+  width: 250px;
+}
+main .user-contain .user-description {
+  text-align: center;
+}
+main .user-contain .user-description .user-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #211E1E;
+  margin-bottom: 0;
+}
+main .user-contain .user-description .user-employment {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+main .user-contain a {
+  cursor: pointer;
+  display: flex;
+}
+main .user-contain a img {
+  width: 70px;
+}
+main .contain-right {
+  position: absolute;
+  opacity: 0.8;
+  background-image: linear-gradient(rgba(0, 8, 57, 0.59), rgba(0, 8, 57, 0.6)), url(../assets/img/background-black.jpg);
+  background-size: cover;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  z-index: 2;
+}
+
+.about {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 8, 57, 0.7), rgba(0, 8, 57, 0.7)), url(../assets/img/background-bellasArtes.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-header {
+  background-color: #000839;
+}
+.about-header a {
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 50px;
+  font-size: 1.3rem;
+  padding: 10px 5px;
+  cursor: pointer;
+  position: relative;
+}
+.about-header a:hover {
+  text-decoration: none;
+}
+.about-header a.active::after {
+  content: "";
+  display: flex;
+  background-color: white;
+  width: 30px;
+  height: 2.2px;
+  position: absolute;
+  left: 50%;
+}
+
+.about-main h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+  font-size: 2.8rem;
+}
+.about-main .about-image {
+  margin-top: 50px;
+}
+.about-main .about-image .image {
+  border-radius: 50%;
+  width: 180px;
+  border: 5px solid white;
+  position: relative;
+  top: 12px;
+  z-index: 1;
+}
+.about-main .about-image .image-comilla {
+  position: absolute;
+  background-color: #000839;
+  width: 35px;
+  padding: 5px;
+  color: white;
+  left: 20px;
+  top: 40px;
+  z-index: 1;
+  border-radius: 50%;
+}
+.about-main .about-image .image-comilla:hover {
+  color: green;
+}
+.about-main .about-description {
+  background-color: white;
+  max-width: 650px;
+  min-height: 150px;
+  border-radius: 5px;
+}
+.about-main .about-description p {
+  padding: 15px 30px;
+  line-height: 28px;
+  font-size: 1.2rem;
+}
+
+.skills {
+  padding-top: 50px;
+  min-height: 100vh;
+  background-color: #e6e4e4;
+  padding-bottom: 50px;
+}
+.skills .skills-title h1 {
+  font-size: 2.8rem;
+  text-align: center;
+}
+.skills .skills-qualities {
+  margin-top: 50px;
+}
+.skills .skills-qualities .skill-descrption h1 {
+  text-align: center;
+  color: #000839;
+  font-size: 1.8rem;
+  margin-top: 10px;
+}
+.skills .skills-qualities .skill-descrption p {
+  text-align: center;
+  color: #33364D;
+  font-size: 0.9rem;
+}
+.skills .skills-qualities .skill-shape {
+  background-color: #FEDA24;
+  max-width: 120px;
+  min-height: 100px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  margin: 0 auto;
+}
+.skills .skills-qualities .skill-shape img {
+  padding: 20px;
+}
+.skills .skills-tecnologies {
+  margin-top: 100px;
+}
+.skills .skills-tecnologies .margin-top {
+  margin-top: 50px;
+}
+.skills .skills-tecnologies .skill-tecnolgies-container-description {
+  width: 220px;
+  height: 70px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.skills .skills-tecnologies .skill-tecnolgies-container-description img {
+  width: 120px;
+  padding: 5px 8px 5px;
+}
+.skills .skills-tecnologies .skill-tecnolgies-container-description p {
+  font-size: 0.8rem;
+  margin-top: 15px;
+  text-align: left;
+  color: #211E1E;
+}
+
+.project .project-title {
+  margin: 50px auto;
+  color: #000839;
+  font-size: 2.8rem;
+}
+.project .bg-project1 {
+  background-image: url("../assets/img/digital-agency.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project .bg-project2 {
+  background-image: url("../assets/img/barber-shop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.project .bg-project3 {
+  background-image: url("../assets/img/dashboard-ventas.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.project .bg-project4 {
+  background-image: url("../assets/img/digital-agency.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project .bg-project5 {
+  background-image: url("../assets/img/digital-agency.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project .bg-project6 {
+  background-image: url("../assets/img/digital-agency.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project .project-container-description {
+  width: 350px;
+  border: solid 1px rgba(51, 54, 77, 0.3);
+  width: 300px;
+  min-height: 200px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.project .project-container-description .project-container-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.project .project-container-description p {
+  font-size: 0.8rem;
+  color: #211E1E;
+}
+.project .project-container-description a {
+  border: solid 1px #000839;
+  border-radius: 5px;
+  padding: 7px 15px;
+  text-decoration: none;
+  color: #000839;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 60px;
+}
+.project .project-container-description a:hover {
+  background-color: #000839;
+  color: white;
+  transition: all 0.2s ease-out;
+}
+
+.contact {
+  margin-top: 150px;
+  position: relative;
+}
+.contact .contact-contain-left {
+  position: absolute;
+  background-color: #000839;
+  height: 500px;
+}
+.contact .contact-contain-left h1 {
+  color: white;
+  text-align: center;
+}
+.contact .contact-contain-left a {
+  display: inline-flex;
+  color: white;
+  margin: 10px auto;
+  font-size: 1rem;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+.contact .contact-contain-left a:hover {
+  text-decoration: none;
+}
+.contact .contact-contain-left a i {
+  margin-right: 5px;
+  color: #211E1E;
+  background-color: #FEDA24;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  padding: 10px;
+}
+.contact .contact-contain-left a i:hover {
+  text-decoration: none;
+}
+.contact .contact-contain-right {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
