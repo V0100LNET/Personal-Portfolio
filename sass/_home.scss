@@ -16,21 +16,21 @@ header{
 /*****************************contenido de la izquierda*******************/
 main{
     .contain-left{
+        background-color: white;
         position: relative;
         height: 100vh;
         width: 50%;
-        z-index: 10;
 
         .btn-social-media{
             position: absolute;
             bottom: 50%;
-            z-index: 998;
+            z-index: 999;
         }
 
         .panel-btn{
             position: absolute;
             bottom: 50%;
-            z-index: 998;
+            z-index: 999;
         }
 
         .panel-btn{
@@ -93,7 +93,7 @@ main{
 
     .user-contain{
         position: absolute;
-        z-index: 3;
+        z-index: 4;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -143,6 +143,6 @@ main{
         right: 0;
         width: 50%;
         height: 100vh;
-        z-index: 2;
+        z-index: 1;
     }
 }

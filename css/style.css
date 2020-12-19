@@ -10,6 +10,7 @@
 
 body {
   font-family: "Nunito", sans-serif;
+  background-color: #e4e4e4;
 }
 
 header {
@@ -24,20 +25,20 @@ header .logo a img {
 
 /*****************************contenido de la izquierda*******************/
 main .contain-left {
+  background-color: white;
   position: relative;
   height: 100vh;
   width: 50%;
-  z-index: 10;
 }
 main .contain-left .btn-social-media {
   position: absolute;
   bottom: 50%;
-  z-index: 998;
+  z-index: 999;
 }
 main .contain-left .panel-btn {
   position: absolute;
   bottom: 50%;
-  z-index: 998;
+  z-index: 999;
 }
 main .contain-left .panel-btn {
   position: absolute;
@@ -91,7 +92,7 @@ main .contain-left .btn-social-media .linkedin:hover {
 }
 main .user-contain {
   position: absolute;
-  z-index: 3;
+  z-index: 4;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -134,7 +135,7 @@ main .contain-right {
   right: 0;
   width: 50%;
   height: 100vh;
-  z-index: 2;
+  z-index: 1;
 }
 
 .about {
@@ -276,6 +277,9 @@ main .contain-right {
   color: #211E1E;
 }
 
+.project {
+  background-color: white;
+}
 .project .project-title {
   margin: 50px auto;
   color: #000839;
@@ -347,13 +351,19 @@ main .contain-right {
 }
 
 .contact {
+  height: 100vh;
   margin-top: 150px;
   position: relative;
+}
+.contact .contact-contain-left > * {
+  padding: 0.9rem 0;
 }
 .contact .contact-contain-left {
   position: absolute;
   background-color: #000839;
   height: 500px;
+  top: 11.5%;
+  z-index: 1;
 }
 .contact .contact-contain-left h1 {
   color: white;
@@ -383,7 +393,46 @@ main .contain-right {
   text-decoration: none;
 }
 .contact .contact-contain-right {
-  display: none;
+  position: absolute;
+  background-color: white;
+  left: 13%;
+  padding-top: 60px;
+  padding-bottom: 70px;
+  margin-top: 25px;
+  height: 600px;
+  display: flex;
+  justify-content: start;
+}
+.contact .contact-contain-right form {
+  padding-top: 50px;
+  margin-left: 250px;
+}
+.contact .contact-contain-right label {
+  color: #000839;
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.contact .contact-contain-right input, .contact .contact-contain-right textarea {
+  width: 150%;
+  display: block;
+  background-color: #FEDA24;
+  border-radius: 5px;
+  padding: 8px 5px;
+  border: none;
+  margin-bottom: 10px;
+  outline: none;
+}
+.contact .contact-contain-right textarea {
+  min-height: 100px;
+  max-height: 100px;
+}
+.contact .contact-contain-right .btn-input {
+  background-color: #000839;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
