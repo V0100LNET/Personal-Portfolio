@@ -289,33 +289,83 @@ main .contain-right {
   background-image: url("../assets/img/digital-agency.png");
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
+}
+.project .bg-project1:hover {
+  background: transparent;
+  animation: 10s ease-in-out;
+}
+.project .bg-project1:hover .active {
+  display: block !important;
 }
 .project .bg-project2 {
   background-image: url("../assets/img/barber-shop.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  cursor: pointer;
+}
+.project .bg-project2:hover {
+  background: transparent;
+  animation: 10s ease-in-out;
+}
+.project .bg-project2:hover .active {
+  display: block !important;
 }
 .project .bg-project3 {
   background-image: url("../assets/img/dashboard-ventas.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  cursor: pointer;
+}
+.project .bg-project3:hover {
+  background: transparent;
+  animation: 10s ease-in-out;
+}
+.project .bg-project3:hover .active {
+  display: block !important;
 }
 .project .bg-project4 {
-  background-image: url("../assets/img/digital-agency.png");
+  background-image: url("../assets/img/Bookmart-manager.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+.project .bg-project4:hover {
+  background: transparent;
+  animation: 10s ease-in-out;
+}
+.project .bg-project4:hover .active {
+  display: block !important;
 }
 .project .bg-project5 {
-  background-image: url("../assets/img/digital-agency.png");
+  background-image: url("../assets/img/Edena-page.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+.project .bg-project5:hover {
+  background: transparent;
+  transition: 3s;
+}
+.project .bg-project5:hover .active {
+  display: block !important;
 }
 .project .bg-project6 {
-  background-image: url("../assets/img/digital-agency.png");
+  background-image: url("../assets/img/dashboard-ventas-2.png");
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
+}
+.project .bg-project6:hover {
+  background: transparent;
+  animation: 10s ease-in-out;
+}
+.project .bg-project6:hover .active {
+  display: block !important;
 }
 .project .project-container-description {
   width: 350px;

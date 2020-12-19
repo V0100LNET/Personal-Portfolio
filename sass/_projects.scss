@@ -12,29 +12,96 @@
         background-image: url("../assets/img/digital-agency.png");
         background-repeat: no-repeat;
         background-size: cover;
+        cursor: pointer;
+
+        &:hover{
+            background: transparent;
+            animation: 10s ease-in-out;
+
+            .active{
+                display: block !important;
+            }
+        }
     }
     .bg-project2{
         background-image: url("../assets/img/barber-shop.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        cursor: pointer;
+
+        &:hover{
+            background: transparent;
+            animation: 10s ease-in-out;
+
+            .active{
+                display: block !important;
+            }
+        }
+
     }.bg-project3{
         background-image: url("../assets/img/dashboard-ventas.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        cursor: pointer;
+
+        &:hover{
+            background: transparent;
+            animation: 10s ease-in-out;
+
+            .active{
+                display: block !important;
+            }
+        }
+
     }.bg-project4{
-        background-image: url("../assets/img/digital-agency.png");
+        background-image: url("../assets/img/Bookmart-manager.png");
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
+        cursor: pointer;
+
+        &:hover{
+            background: transparent;
+            animation: 10s ease-in-out;
+
+            .active{
+                display: block !important;
+            }
+        }
+
     }.bg-project5{
-        background-image: url("../assets/img/digital-agency.png");
+        background-image: url("../assets/img/Edena-page.png");
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
+        cursor: pointer;
+
+        &:hover{
+            background: transparent;
+            transition: 3s;
+
+            .active{
+                display: block !important;
+            }
+        }
+
     }.bg-project6{
-        background-image: url("../assets/img/digital-agency.png");
+        background-image: url("../assets/img/dashboard-ventas-2.png");
         background-repeat: no-repeat;
         background-size: cover;
+        cursor: pointer;
+
+        &:hover{
+            background: transparent;
+            animation: 10s ease-in-out;
+
+            .active{
+                display: block !important;
+            }
+        }
+
     }
 
     .project-container-description{
