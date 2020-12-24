@@ -45,101 +45,34 @@
         
     }
 
-    .bg-project1{
-        background-image: url("../assets/img/digital-agency.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        cursor: pointer;
+    .bg-project1{ background-image: url("../assets/img/digital-agency.png");}
+    .bg-project2{ background-image: url("../assets/img/barber-shop.png");}
+    .bg-project3{ background-image: url("../assets/img/dashboard-ventas.png");}
+    .bg-project4{ background-image: url("../assets/img/Bookmart-manager.png");}
+    .bg-project5{ background-image: url("../assets/img/Edena-page.png");}
+    .bg-project6{ background-image: url("../assets/img/dashboard-ventas-2.png");}
 
-        &:hover{
-            background: transparent;
-            animation: 10s ease-in-out;
 
-            .active{
-                display: block !important;
-            }
-        }
-    }.bg-project2{
-        background-image: url("../assets/img/barber-shop.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        cursor: pointer;
-
-        &:hover{
-            background: transparent;
-            animation: 10s ease-in-out;
-
-            .active{
-                display: block !important;
-            }
-        }
-
-    }.bg-project3{
-        background-image: url("../assets/img/dashboard-ventas.png");
+    .bg-project1,
+    .bg-project2,
+    .bg-project3,
+    .bg-project4,
+    .bg-project5,
+    .bg-project6{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         cursor: pointer;
-
+        
         &:hover{
             background: transparent;
             animation: 10s ease-in-out;
-
+            
             .active{
                 display: block !important;
             }
         }
-
-    }.bg-project4{
-        background-image: url("../assets/img/Bookmart-manager.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        cursor: pointer;
-
-        &:hover{
-            background: transparent;
-            animation: 10s ease-in-out;
-
-            .active{
-                display: block !important;
-            }
-        }
-
-    }.bg-project5{
-        background-image: url("../assets/img/Edena-page.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        cursor: pointer;
-
-        &:hover{
-            background: transparent;
-            transition: 3s;
-
-            .active{
-                display: block !important;
-            }
-        }
-
-    }.bg-project6{
-        background-image: url("../assets/img/dashboard-ventas-2.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        cursor: pointer;
-
-        &:hover{
-            background: transparent;
-            animation: 10s ease-in-out;
-
-            .active{
-                display: block !important;
-            }
-        }
-
-    }
-          
+    }          
 }
 
 @media (max-width: 768px){
@@ -160,6 +93,10 @@
             margin-left: -15px;
             margin: auto;
             margin-bottom: 10px;
+        }
+
+        h1{
+            font-size: 2rem !important;
         }
     }
 }

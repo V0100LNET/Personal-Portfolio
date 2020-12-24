@@ -1,7 +1,7 @@
 .contact{
+    margin-left: 19%;
     height: 100vh;
-    margin-top: 150px;
-    // background-color: rgb(211, 211, 211);
+    margin-top: 100px;
     position: relative;
 
     .contact-contain-left > *{
@@ -25,7 +25,6 @@
             color: white;
             margin: 10px auto;
             font-size: 1rem;
-            align-items: center;
             align-self: center;
             justify-content: center;
 
@@ -98,13 +97,10 @@
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 992px){
     .contact{
+        margin-left: auto;
         position: static;
-
-        .contact-contain-left > *{
-            padding: 0;
-        }
 
         .contact-contain-left{
             position: static;
@@ -113,11 +109,13 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
 
             a{
-                display: block;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 font-size: 0.8rem;
+                padding: 0 20px;
 
                 i{
                     font-size: 2rem;
@@ -129,11 +127,78 @@
             padding: 0;
             margin-top: 0;
             position: static;
+            height: auto;
             
             form{
+                padding: 20px 40px 0 40px;
+                width: 100%;
                 margin-left: 0;
                 margin-top: 0;
+
+                input, textarea{
+                    width: 100%;
+                }
             }
         }
     }
 }
+
+@media (max-width: 768px){
+    .contact{
+        .contact-contain-left > *{
+            padding: 0;
+        }
+        .contact-contain-left > * :not(h1){
+            display: none;
+        }
+
+        .contact-contain-left h1{
+            font-size: 2rem;
+        }
+
+        .contact-contain-right{
+            form{
+                width: 100%;
+                padding: 20px;
+
+                input, textarea{
+                    width: 100%;
+                    color: rgba($color-blue-brand, $alpha: 0.4);
+                    font-weight: bold;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 576px){
+    .contact{
+
+        .contact-contain-left > *{
+            padding: 0;
+        }
+        .contact-contain-left > * :not(h1){
+            display: none;
+        }
+
+        .contact-contain-left h1{
+            font-size: 2rem;
+        }
+
+        .contact-contain-right{
+            form{
+                width: 100%;
+                padding: 20px;
+
+                input, textarea{
+                    width: 100%;
+                    color: rgba($color-blue-brand, $alpha: 0.4);
+                    font-weight: bold;
+                }
+            }
+        }
+
+    }
+}
+

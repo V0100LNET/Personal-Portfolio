@@ -71,6 +71,14 @@
                 text-align: left;
                 color: $color-black-brand;
             }
+
+            .figma{
+                width: 90px;
+            }
+
+            .html{
+                width: 100px;
+            }
         }
     }
 
@@ -93,6 +101,13 @@
 
             img{
                 width: 60px !important;
+            }
+        }
+    }
+    .skills{
+        .skills-title{
+            h1{
+                font-size: 2rem;
             }
         }
     }

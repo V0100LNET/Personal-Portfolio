@@ -70,21 +70,21 @@ main{
             .twitter{
                 background-color: #1DA1F2;
                 &:hover{
-                    background-color: $color-bg-dark;
+                    background-color: rgba($color: $color-blue-brand, $alpha: 1);
                 }
             }
 
             .github{
                 background-color: #333333;
                 &:hover{
-                    background-color: $color-bg-dark;
+                    background-color: rgba($color: $color-blue-brand, $alpha: 1);
                 }
             }
 
             .linkedin{
                 background-color: #0077B5;
                 &:hover{
-                    background-color: $color-bg-dark;
+                    background-color: rgba($color: $color-blue-brand, $alpha: 1);
                 }
             }
         }

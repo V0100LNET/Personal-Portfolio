@@ -1,11 +1,3 @@
-$color-blue-brand: #000839;
-$color-yellow-brand: #FEDA24; 
-$color-black-brand: #211E1E;
-$color-white-brand: white;
-
-$color-bg-dark: #33364D;
-$color-bg-hamburguer: #F0A500;
-
 *,
 *::before,
 ::after{
@@ -19,8 +11,10 @@ $color-bg-hamburguer: #F0A500;
 body{
     font-family: 'Nunito', sans-serif;
     background-color: rgb(228, 228, 228);
+    overflow-x: hidden;
 }
 
+@import 'variables';
 @import 'home';
 @import 'about';
 @import 'skills';
