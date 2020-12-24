@@ -127,6 +127,21 @@ main .user-contain a {
 main .user-contain a img {
   width: 70px;
 }
+main .user-contain .scroll-animation {
+  position: relative;
+  animation-name: scroll-move;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+  top: 0;
+}
+@keyframes scroll-move {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 17px;
+  }
+}
 main .contain-right {
   position: absolute;
   opacity: 0.8;
@@ -192,12 +207,12 @@ main .contain-right {
 
 .about-main h1 {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
   color: white;
   font-size: 2.8rem;
 }
 .about-main .about-image {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .about-main .about-image .image {
   border-radius: 50%;

@@ -132,6 +132,25 @@ main{
                 width: 70px;
             }
         }
+
+        .scroll-animation{
+            position: relative;
+            animation-name: scroll-move;
+            animation-duration: 1.3s;
+            animation-iteration-count: infinite;
+            // animation-timing-function: linear;
+            top: 0;
+        }
+
+        @keyframes scroll-move{
+            0%{
+                top: 0;
+            }
+            
+            50%{
+                top: 17px;
+            }
+        }
     }
 
     .contain-right{
