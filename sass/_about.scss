@@ -88,3 +88,24 @@
         }
     }
 }
+
+
+@media (max-width: 768px){
+    .about-header{
+        a{
+            margin-right: 20px;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .about-header{
+        display: none;
+    }
+
+    .about-main{
+        .about-image{
+            margin-top: 0;
+        }
+    }
+}

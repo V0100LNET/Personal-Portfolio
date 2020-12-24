@@ -8,6 +8,43 @@
         font-size: 2.8rem;
     }
 
+    .project-container-description{
+        border: solid 1px rgba(51, 54, 77, 0.3);
+        width: 300px;
+        min-height: 200px;
+        margin-bottom: 30px;
+        padding: 10px;
+        border-radius: 10px;
+        
+        .project-container-title{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        p{
+            font-size: 0.8rem;
+            color: $color-black-brand;
+        }
+
+        a{
+            border: solid 1px $color-blue-brand;
+            border-radius: 5px;
+            padding: 7px 15px;
+            text-decoration: none;
+            color: $color-blue-brand;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 60px;
+
+            &:hover{
+                background-color: $color-blue-brand;
+                color: white;
+                transition: all 0.2s ease-out; 
+            }
+        }
+        
+    }
+
     .bg-project1{
         background-image: url("../assets/img/digital-agency.png");
         background-repeat: no-repeat;
@@ -22,8 +59,7 @@
                 display: block !important;
             }
         }
-    }
-    .bg-project2{
+    }.bg-project2{
         background-image: url("../assets/img/barber-shop.png");
         background-repeat: no-repeat;
         background-size: cover;
@@ -103,45 +139,27 @@
         }
 
     }
-
-    .project-container-description{
-        width: 350px;
-        border: solid 1px rgba(51, 54, 77, 0.3);
-        width: 300px;
-        min-height: 200px;
-        margin-bottom: 30px;
-        padding: 10px;
-        border-radius: 10px;
-        
-        .project-container-title{
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        p{
-            font-size: 0.8rem;
-            color: $color-black-brand;
-        }
-
-        a{
-            border: solid 1px $color-blue-brand;
-            border-radius: 5px;
-            padding: 7px 15px;
-            text-decoration: none;
-            color: $color-blue-brand;
-            font-weight: bold;
-            display: inline-block;
-            margin-top: 60px;
-
-            &:hover{
-                background-color: $color-blue-brand;
-                color: white;
-                transition: all 0.2s ease-out; 
-            }
-        }
-        
-    }
-
-    
           
+}
+
+@media (max-width: 768px){
+    .project{
+        .project-container-description{
+            width: 200px;
+            margin: 10px;
+            margin-left: -15px;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .project{
+        .project-container-description{
+            width: 300px;
+            margin: 10px;
+            margin-left: -15px;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+    }
 }

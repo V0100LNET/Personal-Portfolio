@@ -14,7 +14,7 @@
     .skills-qualities{
         margin-top: 50px;
 
-        .skill-descrption{
+        .skill-description{
             h1{
                 text-align: center;
                 color: $color-blue-brand;
@@ -75,3 +75,26 @@
     }
 
 }
+
+@media (max-width: 768px){
+    .skills-tecnologies{
+        .skill-tecnolgies-container-description{
+            margin-top: 12px;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .skills-tecnologies{
+        .skill-tecnolgies-container-description{
+            width: 90% !important;
+            margin: auto !important;
+            margin-bottom: 10px !important;
+
+            img{
+                width: 60px !important;
+            }
+        }
+    }
+}
+

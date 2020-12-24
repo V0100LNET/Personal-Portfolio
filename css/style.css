@@ -138,6 +138,23 @@ main .contain-right {
   z-index: 1;
 }
 
+@media (max-width: 576px) {
+  main .contain-left .btn-social-media {
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+  }
+  main .contain-left .btn-social-media a {
+    width: 40px;
+    height: auto;
+    font-size: 1.5rem;
+  }
+  main .user-contain img {
+    width: 200px;
+  }
+  main .user-contain .user-description .user-name {
+    font-size: 2rem;
+  }
+}
 .about {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 8, 57, 0.7), rgba(0, 8, 57, 0.7)), url(../assets/img/background-bellasArtes.jpg);
@@ -215,6 +232,20 @@ main .contain-right {
   font-size: 1.2rem;
 }
 
+@media (max-width: 768px) {
+  .about-header a {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .about-header {
+    display: none;
+  }
+
+  .about-main .about-image {
+    margin-top: 0;
+  }
+}
 .skills {
   padding-top: 50px;
   min-height: 100vh;
@@ -228,13 +259,13 @@ main .contain-right {
 .skills .skills-qualities {
   margin-top: 50px;
 }
-.skills .skills-qualities .skill-descrption h1 {
+.skills .skills-qualities .skill-description h1 {
   text-align: center;
   color: #000839;
   font-size: 1.8rem;
   margin-top: 10px;
 }
-.skills .skills-qualities .skill-descrption p {
+.skills .skills-qualities .skill-description p {
   text-align: center;
   color: #33364D;
   font-size: 0.9rem;
@@ -277,6 +308,21 @@ main .contain-right {
   color: #211E1E;
 }
 
+@media (max-width: 768px) {
+  .skills-tecnologies .skill-tecnolgies-container-description {
+    margin-top: 12px;
+  }
+}
+@media (max-width: 576px) {
+  .skills-tecnologies .skill-tecnolgies-container-description {
+    width: 90% !important;
+    margin: auto !important;
+    margin-bottom: 10px !important;
+  }
+  .skills-tecnologies .skill-tecnolgies-container-description img {
+    width: 60px !important;
+  }
+}
 .project {
   background-color: white;
 }
@@ -284,6 +330,37 @@ main .contain-right {
   margin: 50px auto;
   color: #000839;
   font-size: 2.8rem;
+}
+.project .project-container-description {
+  border: solid 1px rgba(51, 54, 77, 0.3);
+  width: 300px;
+  min-height: 200px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.project .project-container-description .project-container-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.project .project-container-description p {
+  font-size: 0.8rem;
+  color: #211E1E;
+}
+.project .project-container-description a {
+  border: solid 1px #000839;
+  border-radius: 5px;
+  padding: 7px 15px;
+  text-decoration: none;
+  color: #000839;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 60px;
+}
+.project .project-container-description a:hover {
+  background-color: #000839;
+  color: white;
+  transition: all 0.2s ease-out;
 }
 .project .bg-project1 {
   background-image: url("../assets/img/digital-agency.png");
@@ -367,39 +444,23 @@ main .contain-right {
 .project .bg-project6:hover .active {
   display: block !important;
 }
-.project .project-container-description {
-  width: 350px;
-  border: solid 1px rgba(51, 54, 77, 0.3);
-  width: 300px;
-  min-height: 200px;
-  margin-bottom: 30px;
-  padding: 10px;
-  border-radius: 10px;
-}
-.project .project-container-description .project-container-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.project .project-container-description p {
-  font-size: 0.8rem;
-  color: #211E1E;
-}
-.project .project-container-description a {
-  border: solid 1px #000839;
-  border-radius: 5px;
-  padding: 7px 15px;
-  text-decoration: none;
-  color: #000839;
-  font-weight: bold;
-  display: inline-block;
-  margin-top: 60px;
-}
-.project .project-container-description a:hover {
-  background-color: #000839;
-  color: white;
-  transition: all 0.2s ease-out;
-}
 
+@media (max-width: 768px) {
+  .project .project-container-description {
+    width: 200px;
+    margin: 10px;
+    margin-left: -15px;
+  }
+}
+@media (max-width: 576px) {
+  .project .project-container-description {
+    width: 300px;
+    margin: 10px;
+    margin-left: -15px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
 .contact {
   height: 100vh;
   margin-top: 150px;
@@ -483,6 +544,41 @@ main .contain-right {
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    position: static;
+  }
+  .contact .contact-contain-left > * {
+    padding: 0;
+  }
+  .contact .contact-contain-left {
+    position: static;
+    height: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .contact-contain-left a {
+    display: block;
+    font-size: 0.8rem;
+  }
+  .contact .contact-contain-left a i {
+    font-size: 2rem;
+  }
+  .contact .contact-contain-right {
+    padding: 0;
+    margin-top: 0;
+    position: static;
+  }
+  .contact .contact-contain-right form {
+    margin-left: 0;
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

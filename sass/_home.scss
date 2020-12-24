@@ -146,3 +146,34 @@ main{
         z-index: 1;
     }
 }
+
+@media (max-width: 576px){
+    main{
+
+        .contain-left{
+            .btn-social-media{
+                flex-direction: column-reverse;
+                margin-bottom: 20px;
+
+                a{
+                    width: 40px;
+                    height: auto;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .user-contain{
+            img{
+                width: 200px;
+            }
+
+            .user-description{
+
+                .user-name{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
