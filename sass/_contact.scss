@@ -1,7 +1,7 @@
 .contact{
     margin-left: 19%;
     height: 100vh;
-    margin-top: 100px;
+    margin-top: 50px;
     position: relative;
 
     .contact-contain-left > *{
@@ -27,6 +27,7 @@
             font-size: 1rem;
             align-self: center;
             justify-content: center;
+            align-items: center;
 
             &:hover{
                 text-decoration: none;

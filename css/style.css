@@ -155,6 +155,9 @@ main .contain-right {
 }
 
 @media (max-width: 576px) {
+  main .contain-left .panel-btn {
+    position: fixed;
+  }
   main .contain-left .btn-social-media {
     flex-direction: column-reverse;
     margin-bottom: 20px;
@@ -177,6 +180,23 @@ main .contain-right {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+.about .panel-btn {
+  position: absolute;
+  background-color: #F0A500;
+  z-index: 999;
+  bottom: 1vw;
+  left: 1vw;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
 }
 
 .about-header {
@@ -197,12 +217,11 @@ main .contain-right {
 }
 .about-header a.active::after {
   content: "";
-  display: flex;
+  display: block;
   background-color: white;
   width: 30px;
   height: 2.2px;
   position: absolute;
-  left: 50%;
 }
 
 .about-main h1 {
@@ -249,6 +268,10 @@ main .contain-right {
 }
 
 @media (max-width: 768px) {
+  .about {
+    height: 116vh;
+  }
+
   .about-header a {
     margin-right: 20px;
   }
@@ -460,7 +483,7 @@ main .contain-right {
 .contact {
   margin-left: 19%;
   height: 100vh;
-  margin-top: 100px;
+  margin-top: 50px;
   position: relative;
 }
 .contact .contact-contain-left > * {
@@ -484,6 +507,7 @@ main .contain-right {
   font-size: 1rem;
   align-self: center;
   justify-content: center;
+  align-items: center;
 }
 .contact .contact-contain-left a:hover {
   text-decoration: none;

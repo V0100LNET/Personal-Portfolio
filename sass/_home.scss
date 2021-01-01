@@ -167,9 +167,14 @@ main{
 }
 
 @media (max-width: 576px){
+    
     main{
-
         .contain-left{
+
+            .panel-btn{
+                position: fixed;
+            }
+
             .btn-social-media{
                 flex-direction: column-reverse;
                 margin-bottom: 20px;

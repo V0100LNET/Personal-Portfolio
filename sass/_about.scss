@@ -4,6 +4,24 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+
+    .panel-btn{
+        position: absolute;
+        background-color: $color-bg-hamburguer;
+        z-index: 999;
+        bottom: 1vw;
+        left: 1vw;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        border: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none; 
+    }
 }
 
 .about-header{
@@ -27,12 +45,11 @@
     a.active{
         &::after{
             content: "";
-            display: flex;
+            display: block;
             background-color: white;
             width: 30px;
             height: 2.2px;
             position: absolute;
-            left: 50%;
         }
     }
 }
@@ -91,6 +108,10 @@
 
 
 @media (max-width: 768px){
+    .about{
+        height: 116vh;
+    }
+
     .about-header{
         a{
             margin-right: 20px;
